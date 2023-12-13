@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta link-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Name">
+    <meta name="description" content="About The Website ">
+    <meta name="keywords" content="Name Of Content">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="5 days">
+    <meta name="author" content="Md.Al-Amin">
+    <!--Meta link-->
+
+    <title>JavaScript</title>
+    <!-- Font Awesome Start -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Font Awesome ENd -->
+    <!--Css link-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-icons.css">
+
+
+
+</head>
+
+<body id="modeChange">
+
+    <div class="container">
+        <!-- Mood Change -->
+        <h2>CLick For Change background Color</h2>
+        <button type="button" class="btn btn-dark" onclick="backgroundColorChange()">Black </button>
+        <button type="button" class="btn btn-light" onclick="backgroundColorChange2()">Normal </button>
+        
+        
+        <hr>
+        <!-- Date See -->
+        <h2>Click for see date and time</h2>
+        <button type="button" class="btn btn-success" onclick="dateSee()">Date & Time</button>
+        <p id="dateSee"></p>
+        <hr><!-- text change -->
+        <h2>Click for change the text</h2>
+        <button type="button" class="btn btn-success" onclick="textchange()">change text</button>
+        <p id="changetext">This text is change</p>
+        <hr><!-- Off or on light -->
+        <!-- On or off button -->
+        <h2>On off light</h2>
+        <button type="button" class="btn-success btn" onclick="onBlub()">on</button>
+        <button type="button" class="btn-danger btn" onclick="offBlub()">off</button>
+        <img src="images/offblub.gif" alt="" id="offblub">
+        <hr>
+        <!--Happy Or sad  -->
+        <h2>Click For See Sad & Happy GIF</h2>
+        <button type="button" class="btn btn-success" onclick="happyGif()">Happy</button>
+        <button type="button" class="btn btn-danger" onclick="sadGif()">Sad</button>
+        <img src="images/happy.gif" alt="" width="300px" id="happy">
+        <hr>
+        <!-- Show Border -->
+        <h2>Click the button to show border</h2>
+        <button type="button" class="btn btn-success" onclick=" showBorder()">show Border</button>
+        <p id="sb" class="mt-3">Lorem ipsum dolor sit amet consectetur.</p>
+        <hr><!-- Font Size Change -->
+        <h2>Click For change Font Size
+        </h2>
+        <button type="button" class="btn btn-success" onclick="fontSize()">click</button>
+        <p id="fontsize">Lorem ipsum dolor sit amet.</p>
+        <hr>
+        <!-- Hide the text -->
+        <h2>Click for change the text</h2>
+        <button type="button" class="btn btn-danger" onclick="hideText()">text hide</button>
+        <button type="button" class="btn btn-success" onclick="showtext()">Show Text</button>
+
+        <p id="texthide">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <hr>
+        <!-- Alert -->
+        <h2>Click FOr Show Alert</h2>
+        <button type="button" class="btn btn-success" onclick="clickAlert()" id="alert">Click</button>
+        <hr>
+        <!-- Console Log Text -->
+        <h2>Click and see in Console in devtools</h2>
+        <button type="button" class="btn btn-success" onclick="consoleLog()">Console Log text</button>
+        <hr>
+        <!-- Print -->
+        <h2>Click For print this page</h2>
+        <button type="button" class="btn btn-success" onclick="printpage()">Print This page</button>
+        <hr>
+        <!-- JavaScript Statements -->
+        <h2>dbl click for see Sum calculate</h2>
+        <button type="button" class="btn btn-success" ondblclick="statement()">Click</button>
+        <p id="demo"></p>
+        <hr>
+        <!-- Get background color  -->
+        <h2>hover the button to see the background color of this text</h2>
+        <button type="button" class="btn btn-outline-success" onmouseover="backgroundColor()">CLick</button>
+        <p id="hoverbg" class="mt-3">Lorem ipsum dolor sit amet.</p>
+        <hr>
+        <!-- Use of class name -->
+        <h2>Use Of class name</h2>
+        <button type="button" class="btn btn-outline-primary" onclick="bg()">Click</button>
+        <p class="para">Lorem ipsum dolor sit.</p>
+        <hr>
+        <!-- Mixed Variables -->
+        <h2>Here i have to use Mixed Variables</h2>
+        <button type="button" cla ss="btn btn-outline-info" onmouseover="mixed()">Click</button>
+        <p id="mixed"></p>
+        <hr>
+        <!-- Const Uses -->
+        <h2>Const Use</h2>
+        <button type="button" class="btn btn-outline-primary" onclick="constTest()">click</button>
+        <p id="constUses"></p>
+        <hr>
+        <!-- array uses -->
+        <h2>Click and see array data
+        </h2>
+        <button type="button" class="btn btn-primary" onclick="arrayUses()">Click</button>
+        <p id="arrayUsees"></p>
+        <hr>
+        <!-- Object Uses -->
+        <h2>Object Uses In this Section you have to see in Dev Tools in consoleLog</h2>
+        <hr>
+        <!-- Date Methods -->
+        <h2>Click to see Year</h2>
+        <button type="button" class="btn btn-success" onclick="thisYear()">Year</button>
+        <p id="ty"></p>
+        <hr>
+        <!-- Date Methods -->
+        <h2>Click to see Month</h2>
+        <button type="button" class="btn btn-success" onclick="thisMonth()">Month</button>
+        <p id="tm"></p>
+        <hr>
+        <!-- Date Methods -->
+        <h2>Click to see todays date</h2>
+        <button type="button" class="btn btn-success" onclick="todaysDate()">Date</button>
+        <p id="td"></p>
+        <hr>
+        <!-- Date Methods -->
+        <h2>Click to see Time</h2>
+        <button type="button" class="btn btn-success" onclick="thisHour()">Time</button>
+        <p id="hr"></p>
+        <hr>
+        <!-- querySelector -->
+        <h2>Query Selector</h2>
+        <button type="button" class="btn btn-outline-dark" onclick="qSedit()">Click</button>
+        <p id="qs">Lorem ipsum dolor sit.</p>
+        <hr>
+        <!-- Query Selector 2 -->
+        <h2>Query Selector 2 </h2>
+        <button type="button" class="btn btn-outline-dark" onclick="qSedit2()">Click</button>
+        <div class="myDiv">
+            <a href="#" class="text-decoration-none">Div text</a>
+        </div>
+        <!-- Image change -->
+        <h2>Click and change the img</h2>
+        <button type="button" class="btn btn-outline-dark"onclick="changeImg1()">Js</button>
+        <button type="button" class="btn btn-outline-dark" onclick="changeImg2()">JQ</button><br>
+        <img src="#" alt="" width="300" height="100" id="chimg" class="mt-5">
+        <hr>
+
+        <!-- Dom Manuplate -->
+        <h2>Here I have to use DOM Manuplate,Add,Find,Remove, Element</h2>
+        <div class="dom-manu bg-body-secondary">
+        <h5>Hello</h5>
+        <h5>Lorem, ipsum.</h5>
+        <hr>
+        </div>
+        <!-- Dom Traversing -->
+            <h2>Here I have to use dom Traversing</h2>
+            <ul class="student-list">
+                <li class="student-a">Name</li>
+                <li class="student-b">Age</li>
+                <li class="student-c">class</li>
+            </ul>
+            <hr>
+            <!-- Slider Image -->
+            <div class="text-center">
+            <h2 class="mb-5">Click to see slide image</h2>
+            <button type="button" class="btn btn-outline-warning" onclick="prev()">Pervious</button>
+            <img src="images/jqimg.jpg"alt="img"width="300" height="200" id="c_img">
+            <button type="button" class="btn btn-outline-success" onclick="next()">Next</button>
+        </div>
+        <hr>
+        <!--  Changing CSS style dynamically -->
+        <h2 class="mb-4"> Changing CSS style dynamically</h2>
+        <button type="button" class="btn btn-outline-info" onclick="addStyle()">Add Style</button>
+
+        <h5 id="h5_style" class="d-inline-block">This is text</h5>
+
+        <button type="button" class="btn btn-outline-info" onclick="removeStyle()">Remove Style</button>
+        <hr>
+        <!-- Event Listenter -->
+        <h2>Hover This Text For change text</h2>
+        <h6>Text Is change</h6>
+
+        <!-- <h2 class="m_e_l">Adding Audio</h2>
+        <button type="button" class="btn btn-danger myButton Play-Audio-1st mx-4">Play-Audio-1st</button>
+        <button type="button" class="btn btn-danger myButton Play-Audio-2nd mx-4">Play-Audio-2nd</button>
+        <button type="button" class="btn btn-danger myButton Play-Audio-3rd mx-4">Play-Audio-3rd</button>
+        <hr>
+      Keypress -->
+        <!-- <h2>Keypress</h2>
+        <textarea  cols="20" rows="5"></textarea>
+        <p class="para"></p> --> 
+        
+
+
+    <!--  Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <!--  Script End-->
+
+</body>
+
+</html>
